@@ -26,14 +26,32 @@ This document aims to provide a basic understanding of hot to configure and use 
 
 ### Asset management
 
-- Extract asset attributes: query MSB, as single collector, with values  updated every 24 hours.
-- Business intelligence: Provide views of asset distribution according to  type and process.
+- Extract asset attributes: query MSB, as data collector, with values  updated every 24 hours.
+- Business intelligence: Provide asset distribution views  according to  type and process.
 
 ### Alert management
 
-- Alerting on critical pre-defined changes – Alert on new asset discovery or asset disappear, changes in state, firmware version and IP, new vulnerability discovery.
-- Business intelligence – Providing alert distribution views by alert types and process. 
+- Issue alerts on critical pre-defined changes: new asset discovery or asset disappear, changes asset in state, firmware version and IP, new vulnerability discovery.
+- Business intelligence: Provide asset distribution views  according to  type and process.
 
 ### Vulnerabilities management
 
-- Identifying security vulnerabilities on assets in the environment – The system continuously tracks the vulnerability list which build by Otorio’s researchers. The current version contains more than 1,000 relevant ICS vulnerabilities 
+- Identify security vulnerabilities in assets in the environment: using  a list of vulnerabilities compiled and updated by Otorio researchers. Currently more than 1,000 relevant ICS vulnerabilities are listed.
+
+## Dashboard
+
+The dashboard shows the overall status of the shop floors in terms of assets, risk levels, and alerts.
+
+The Dashboard shows an interactive pie chart showing the risk level of each shop, and its production cells, in the factory. If there are no risks, the dashboard will indicate this as well. Production cells cards are displayed, for easy navigation to alert screens,to deal with the  prioritization of the shop floor threats.
+
+Assets that have not yet been assigned to cells are shown in the “Unassigned assets” tab, with distributions according to alert types only.
+
+The risk level for an asset is calculated using a proprietary  algorithm  developed by Otorio, which considers the severities of vulnerabilities, as well as the number and types of alerts and assets in the network.
+
+
+## Factory Management
+The first step in managing assets in the factory is grouping them into operational layers, for better mapping and visualization during later steps. You create “cards” (groups) for shops and production cells in their respective tabs under the Factory section. The user can manage basic attributes and operational impacts for each card. Risk level presents on each card if exist - The risk level is calculated by the unique Otorio’s algorithm, which considers the severities of vulnerabilities, as well as the number and types of alerts, assets in the network and managed operational impacts on production cells or assets.
+
+Assets are grouped and  assigned to  cells, and cells  assigned to  shopa.
+
+Assets are configured and managed in the Assets tab under the Factory section.
