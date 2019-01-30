@@ -2,7 +2,7 @@
 
 ## Welcome
 
-This document describes how  to configure and use RAM2 (Risk Assessment, Monitoring & Management). It is intended to help users  who are unfamiliar with  RAM2 gain a quick understanding of how it works, how to configure it for the first time, and how to use it. RAM2 has many options and features, some of which are outside the scope of this overview.  
+This document describes how  to configure and use the Otorio RAM2 (Risk Assessment, Monitoring & Management) appliance. It is intended to help users  who are unfamiliar with  RAM2 gain a quick understanding of how it works, how to configure it for the first time, and how to use it. RAM2 has many options and features, some of which are outside the scope of this overview.  
 
 
 ## About OTORIO
@@ -10,9 +10,9 @@ OTORIO is a service provider  focused on the full life-cycle of industrial cyber
  
 Our know-how is based on years of deep domain expertise in cyber security engineering, and hands-on hacking of mission critical operational systems. The collaboration with Andritz AG brings more than 160 years of industrial engineering and operational technology know-how for leading industrial customers, in a variety of verticals.  
 
-In the ever-changing technology landscape, security does more than protect existing systems; it enables businesses to maximize production and exploit opportunities. OTORIO assists businesses in driving their operational environment forward in an optimized and secured way. 
+In today's ever-changing technology landscape, security does more than protect existing systems; it enables businesses to maximize production and exploit opportunities. OTORIO assists businesses in driving their operational environment forward in an optimized and secured way. 
 
-Guided by strong professional integrity and competence, we offer a comprehensive solution based on a unique formulation of military grade innovative technology and professional services, designed and operated by highly trained cyber security “special forces”. OTORIO’s leading experts are engaged throughout the entire security process at different touch points (requirements, specification, development, and deployment).
+Guided by strong professional integrity and competence, we offer a comprehensive solution based on a unique formulation of military grade innovative technology and professional services, designed and operated by highly trained cyber security “special forces”. OTORIO’s leading experts are engaged at different touch points throughout the entire security process  (requirements, specification, development, and deployment).
  
 ## About this overview
 
@@ -23,37 +23,37 @@ This document aims to provide a basic understanding of how to configure and use 
 ### Factory management 
 
 - Manage the shop floor: create operational layers to group data with similar operational characteristics.
-- Manage operational impacts: manage impacts values to operational layers to help in the risk prioritization.
+- <apan style="color:red">[Manage operational impacts: manage impacts values to operational layers to help in the risk prioritization.]</span>
 
 ### Asset management
 
 - Extract asset attributes: query MSB, as data collector, with values  updated every 24 hours.
-- Business intelligence: Provide asset distribution views  according to  type and process.
+- Business intelligence: provide views of assets, distributed according to type and process.
 
 ### Alert management
 
-- Issue alerts on critical pre-defined changes: new asset discovery or asset disappear, changes asset in state, firmware version and IP, new vulnerability discovery.
-- Business intelligence: provide asset distribution views  according to  type and process.
+- Issue alerts on critical pre-defined changes: new asset discovery or asset disappear; changes asset in state, firmware version and IP; new vulnerability discovery.
+- Business intelligence: provide views of assets, distributed according to type and process.
 
 ### Vulnerabilities management
 
-- Identify security vulnerabilities in assets in the environment: using  a list of vulnerabilities compiled and updated by Otorio researchers. Currently more than 1,000 relevant ICS vulnerabilities are listed.
+- Identify security vulnerabilities in assets in the environment: using a list of vulnerabilities compiled and updated by Otorio researchers. Currently more than 1,000 relevant ICS vulnerabilities are listed.
 
 ## Dashboard
 
 The Dashboard shows the overall status of the shop floors in terms of assets, risk levels, and alerts.
 
-The Dashboard shows an interactive pie chart showing the risk level of each shop, and its production cells, in the factory. If there are no risks, the Dashboard will indicate this as well. Production cells cards are displayed, for easy navigation to alert screens,to deal with the  prioritization of the shop floor threats.
+The Dashboard shows an interactive pie chart showing the risk level of each shop, and its production cells, in the factory. If there are no risks, the Dashboard will indicate this as well. Production cells cards are displayed, from where you can easily navigate to alert screens, to deal with the prioritization of the shop floor threats.
 
-Assets that have not yet been assigned to cells are shown in the “Unassigned assets” tab, with distributions according to alert types only.
+Assets that have not yet been assigned to cells are shown in the “Unassigned assets” tab, and can be filtered according to alert type only.
 
 The risk level for an asset is calculated using a proprietary  algorithm  developed by Otorio, which considers the severities of vulnerabilities, as well as the number and types of alerts and assets in the network.
 
 
 ## Factory Management
-The first step in managing assets in the factory is grouping them into operational layers, for better mapping and visualization during later steps. You create “cards” (groups) for shops and production cells in their respective tabs under the Factory section. The user can manage basic attributes and operational impacts for each card. Risk level presents on each card if exist - The risk level is calculated by the unique Otorio’s algorithm, which considers the severities of vulnerabilities, as well as the number and types of alerts, assets in the network and managed operational impacts on production cells or assets.
+The first step in managing assets in the factory is grouping them into operational layers, for better mapping and visualization during later steps. You create “cards” (groups) for shops and production cells in their respective tabs in the Factory section. You can manage basic attributes and operational impacts for each card. The card shows the risk level for the shop or cell. The risk level is calculated using a proprietry algorithm developed by   Otorio, which considers the severities of vulnerabilities, as well as the number and types of alerts, assets in the network, and managed operational impacts on production cells or assets.
 
-Assets are grouped and  assigned to  cells, and cells  assigned to  shopa.
+Assets can be grouped and assigned to  cells, and cells  assigned to  shops.
 
 Assets are configured and managed in the Assets tab under the Factory section.
 
@@ -70,7 +70,7 @@ The following customized characteristics and attributions are assigned to  asset
 - Production Cell
 - Impact Levels (based on several factors: financial, safety productivity, operational, reputation, and regulator)
 
-The asset inventory is synchronized with the Otorio Threat Intelligence Module that provides knowledge about known and unknown vulnerabilities that are discovered in assets.
+The asset inventory is synchronized with the Otorio Threat Intelligence Module, which provides knowledge about known and unknown vulnerabilities that are discovered in assets.
 
 The assets can be filtered based on various categories and characteristics.
 
@@ -81,15 +81,15 @@ The Alerts section shows alerts that have been generated by the system.
 RAM2 generates the following types of alerts: 
 
 - New Asset Discovered
-- Asset not seen (configurable interval)
+- Asset not seen (in a configurable interval)
 - New Vulnerability Discovered (known and unknown vulnerability on an asset with sync to the Otorio Threat Intelligence Module*)
 - Firmware Version Changed
 - IP Address Changed
 - State Changed
 
-In order to remedy risks and handle alerts, they must be Acknowledged. Future versions of RAM2 will automatically provide mitigation recommendations, based on the alerts. As with the asset management, the alerts can also be filtered based on various categories and characteristics.
+After you remedy risks and handle alerts, you can acknowledge them in RAM2. This removes them from the list of alerts (for the asset in which they were discovered). Future versions of RAM2 will also suggest mitigation recommendations, based on the alerts. As with the asset management, the alerts can also be filtered, based on various categories and characteristics.
 
-### Disabling alerts for specific CVEs
+### Disable alerts for specific CVEs
 
 Use this feature to reduce the number of alerts by disabling alerts for specific CVEs. 
 
