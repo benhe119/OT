@@ -33,4 +33,90 @@ open ports and much more.
 
 - Each risk has a clear remediation guideline
 - Reports are generated as PDF and CSV
-- Can be integrated with RAM<sup>2</sup> asset and risk management
+- Can be integrated with RAM
+
+## Rugged and mobile device
+SPOT uses military-grade laptop for mobility and reliability in
+harsh environments. By combining powerful hardware,
+15.6-inch touch screen and light weight rugged chassis, it’s the
+perfect appliance for the job.
+
+It equipped with various connectors such as: RJ-45, serial,
+HDMI, VGA, USB3 and many more.
+
+## Scan Setup
+
+### Appliance settings
+
+Appliance settings
+
+- Configurate SPOT IP addressNetwork
+- configure credentials for the scan`
+  - Deployment
+- Add vendors / line-builders identifiers and names
+- Tuggle and control the analyzers and alerts you want to check
+according to internal or external policies
+
+### Connect spot to the Machine under test
+
+- spot is connected to the machine using its RJ-45 port.
+### Scan settings
+
+- Each scan is given a name, vendor identifier, configured policy
+to check compliance too and the wanted assets to scan.
+- The assets list can be configured as a subnet, range or single IP
+addresses list.
+- Clicking the “start scan” will initiate the scan.
+
+## Scan process
+spOT scan usually takes between 5 - 15 minutes. The scan is done in
+three stages
+
+### Asset discovery phase
+spot finds all the assets communicating over the network using
+unique, non-intrusive active discoveries abilities.
+
+### Asset analyzing phase
+For each found asset spOT discovers its type, vendor, product
+family and version.
+It finds security miss-configurations, default credentials usage and
+policies deviations.
+spOT analyzes windows machines in the network and search for
+security issues and compliance deviations.
+
+### Threat intel phase
+
+For each found asset spot searches its offline vulnerabilities
+data-base, constructed by Otorio’s threat intel team, and finds all
+known vulnerabilities on each asset.
+
+
+## Scan report
+The scan report is generated automatically after the scan. It gathers
+all the security and compliance issues
+### Total risk and compliance score
+
+A total risk score, between 0 – 100, and a total compliance score are
+presented. They take into account the total number of assets, their
+type and the total number of issues found in the machine. Using the
+total scores, you can easily compare results between machines.
+
+### Issues table
+
+All the issues are gathered in a table, order by their severity. The
+issues are divided into two categories – security and compliance
+All issues have a clear remediation guideline and a user comment
+section.
+
+## Export report to PDF
+
+The generated report can be automatically exported to PDF format
+for you to share it with the vendor, supplier or colleague.
+It contain all the issues with the user comments on them
+
+## Scans history and vendors trends
+
+All the scans reports are gathered in a single place where you can
+view, edit comments and export several scans reports at once.
+Automatically generated vendors and suppliers’ trends such as
+average risk score, risks and compliance over time and more.
